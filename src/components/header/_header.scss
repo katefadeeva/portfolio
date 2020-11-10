@@ -1,0 +1,50 @@
+@import "../../abstract/constants";
+@import "../../abstract/mixins";
+
+.header {
+  background: $color-background;
+  padding: 15px 0 15px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include media-tablet {
+    padding-left: 25px;
+  }
+}
+
+.header__logo  {
+  display: flex;
+  @include media-mobile {
+    justify-content: center;
+    flex-grow: 1;
+    position: relative;
+  }
+}
+
+.header__hamburger {
+  margin-right: 37px;
+  @include media-mobile {
+    position: absolute;
+    left: 0;
+  }
+}
+
+.header__navigation_closed {
+  @include media-tablet {
+    opacity: 0;
+    transition: 0.5s opacity;
+  }
+}
+
+.header__navigation_opened {
+  @include media-tablet {
+    opacity: 1;
+    transition: 0.5s opacity;
+  }
+}

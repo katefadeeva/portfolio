@@ -1,0 +1,11 @@
+@import "../abstract/constants";
+@import "../abstract/mixins";
+@import "../abstract/placeholders";
+
+.logo {
+  @extend %font-prim;
+  @include font($size: 4.8rem, $height: 6.0rem, $weight: normal);
+  text-align: center;
+  color: $color-primary;
+  margin: 0;
+}

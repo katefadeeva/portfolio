@@ -1,5 +1,5 @@
 import React, { Component }from 'react';
-import './app.scss'
+import Header from "../header";
 
 export default class App extends Component {
 
@@ -7,7 +7,7 @@ export default class App extends Component {
 
     return (
         <React.Fragment>
-          <p>Hello</p>
+          <Header />
         </React.Fragment>
     )
   }

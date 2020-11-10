@@ -1,0 +1,19 @@
+@import "../abstract/constants";
+@import "../abstract/mixins";
+@import "../abstract/placeholders";
+
+.button {
+  @extend %font-add;
+  padding: 11px 25px 13px;
+  @include font ($size: 1.4rem, $height: 2.3rem, $weight: normal);
+  cursor: pointer;
+  @extend %transition;
+  background: $color-primary;
+  color: $color-light;
+  text-align: center;
+  text-transform: uppercase;
+  &:hover {
+    background: $color-hovered;
+  }
+
+}

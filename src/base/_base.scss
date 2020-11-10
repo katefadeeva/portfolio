@@ -1,0 +1,44 @@
+@import "../abstract/mixins";
+@import "../abstract/placeholders";
+@import "../abstract/constants";
+
+html {
+  font-size: 10px;
+}
+
+body {
+  @extend %font-add;
+  @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
+  color: $color-text;
+}
+
+h1 {
+  @include font($height: 7.9rem, $size: 4.8rem);
+  @include media-bigtablet {
+    @include font($height: 4.2rem, $size: 3.6rem);
+  }
+  @include media-mobile {
+    @include font($height: 3.6rem, $size: 3.0rem);
+  }
+  color: $color-heading;
+}
+
+h2 {
+  @include font($size: 3.2rem, $height: 3.7rem);
+  @include media-bigtablet {
+    @include font($height: 3.4rem, $size: 2.9rem);
+  }
+  @include media-mobile {
+    @include font($height: 3.0rem, $size: 2.4rem);
+  }
+  color: $color-heading;
+  text-align: center;
+}
+
+h3 {
+  @include font($size: 2.1rem, $height: 2.5rem);
+  @include media-bigtablet {
+    @include font($height: 2.2rem, $size: 2.0rem);
+  }
+  color: $color-light;
+}
