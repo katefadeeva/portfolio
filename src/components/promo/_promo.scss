@@ -1,0 +1,56 @@
+@import "../../abstract/mixins";
+@import "../../abstract/placeholders";
+@import "../../abstract/constants";
+
+.promo {
+  padding: 30px 0;
+  background: $color-background;
+  overflow: hidden;
+}
+
+.promo__wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 160px auto 140px auto !important;
+  @include media-tablet {
+    margin-top: 50px;
+  }
+  @include media-mobile {
+    flex-direction: column-reverse;
+  }
+}
+
+.promo__content {
+  padding-right: 65px;
+  @include media-bigtablet {
+    padding-right: 0;
+  }
+  @include media-mobile {
+    text-align: center;
+  }
+}
+
+.promo__title {
+  margin: 0 0 30px;
+}
+
+.promo__text {
+  max-width: 487px;
+  margin: 0 0 45px;
+  @extend %font-add;
+  @include font($size: 1.8rem, $height: 2.8rem, $weight: normal);
+  @include media-bigtablet {
+    width: 380px;
+  }
+  @include media-mobile {
+    width: auto;
+  }
+}
+
+.promo__image {
+  @include media-mobile {
+    max-width: 100%;
+    margin-bottom: 16px;
+  }
+}

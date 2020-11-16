@@ -12,6 +12,8 @@
   color: $color-light;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid $color-primary;
   &:hover {
     background: $color-hovered;
   }
