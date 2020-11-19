@@ -1,0 +1,45 @@
+@import "../../abstract/mixins";
+@import "../../abstract/placeholders";
+@import "../../abstract/constants";
+
+.skills {
+  padding: 30px 0;
+  overflow: hidden;
+}
+
+.skills__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skills__content p {
+ margin-bottom: 0;
+}
+
+.skills__title {
+  margin: 0 0 25px 0;
+}
+
+.skills__image {
+  width: 35%;
+
+}
+
+progress {
+  background-color: #C4C4C4;
+  color: $color-primary;
+  border: 0;
+  height: 4px;
+  width: 445px;
+  &::-webkit-progress-bar {
+    background-color: #C4C4C4;
+  }
+  &::-webkit-progress-value {
+    background-color: $color-primary;
+  }
+  &::-moz-progress-bar {
+    background-color: #C4C4C4;
+  }
+}
+

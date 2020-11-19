@@ -1,0 +1,18 @@
+@import "../../abstract/constants";
+
+.numbers {
+  background: $color-primary;
+}
+
+.numbers-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  margin: 50px 0 50px 0;
+}
+
+.icon img {
+  filter: invert(1);
+}
